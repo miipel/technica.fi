@@ -32,6 +32,34 @@ const Home: NextPage = () => {
     },
   ];
 
+  const board = [
+    {
+      position: "Puheenjohtaja",
+      name: "Matti Loimaranta",
+    },
+    {
+      position: "Varapuheenjohtaja",
+      name: "Viola Inkinen",
+    },
+    {
+      position: "Taloudenhoitaja",
+      name: "Roosa Varjonen",
+    },
+    {
+      position: "Sihteeri",
+      name: "Tuisku Polvinen",
+    },
+    {
+      position:
+        "Koulutuspolitiikka- ja edunvalvontavastaava sekä Halloped-koordinaattori",
+      name: "Jutta Lindfors",
+    },
+    {
+      position: "Yritysyhteistyövastaava",
+      name: "Arttu Jokinen",
+    },
+  ];
+
   return (
     <Layout>
       <Head>
@@ -75,6 +103,17 @@ const Home: NextPage = () => {
             halloped nimityksistä joka toinen vuosi sekä fasilitoi tiedekunnan
             kopojen välistä yhteistyötä.
           </p>
+          <br />
+          <div>
+            <h2 className="text-xl">Hallitus 2022</h2>
+            <br />
+            {board.map(({ position, name }) => (
+              <figcaption key={position + name} className="font-medium">
+                <h1 className="text-emerald-600 dark:text-emerald-500 prose">{position}</h1>
+                <h1 className="text-slate-700 prose">{name}</h1>
+              </figcaption>
+            ))}
+          </div>
         </div>
       </main>
 
