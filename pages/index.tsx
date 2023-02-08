@@ -126,7 +126,7 @@ const Home: NextPage = () => {
           </p>
           <br />
           <div>
-            <h2 className="text-xl">Hallitus 2022</h2>
+            <h2 className="text-xl">Hallitus {new Date().getFullYear()}</h2>
             <br />
             {board.map(({ position, name }) => (
               <figcaption key={position + name} className="font-medium">
