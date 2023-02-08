@@ -35,29 +35,33 @@ const Home: NextPage = () => {
   const board = [
     {
       position: "Puheenjohtaja",
-      name: "Matti Loimaranta",
+      name: "Katariina Moilanen",
     },
     {
       position: "Varapuheenjohtaja",
-      name: "Viola Inkinen",
+      name: "Katriina Mc Cormick",
     },
     {
       position: "Taloudenhoitaja",
-      name: "Roosa Varjonen",
+      name: "Ellinoora Koivula",
     },
     {
       position: "Sihteeri",
-      name: "Tuisku Polvinen",
+      name: "Janne Ranne",
     },
     {
       position:
         "Koulutuspolitiikka- ja edunvalvontavastaava sekä Halloped-koordinaattori",
-      name: "Jutta Lindfors",
+      name: "Jasmin Toukoniemi",
     },
     {
       position: "Yritysyhteistyövastaava",
-      name: "Arttu Jokinen",
+      name: "Venla Uskali",
     },
+    {
+      position: "Tuutorivastaava",
+      name: "Aleksi-Ilari Pelkonen"
+    }
   ];
 
   return (
